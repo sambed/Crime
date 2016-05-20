@@ -1,0 +1,61 @@
+
+#### How to Run ?
+
+Wait until 'Day' of Week renders from server.R to Ui.R. After that hit submit button to run the app. 
+
+#### Introduction
+
+This app is geared towards Kaggle's 'San Francisco Crime Classification' testing dataset. The objective in the competition was to predict the probabilities of crime that occurred given the time and location. However, we've collapsed 39 categories into 6 broad categories of crime and they are as follows.
+
+* Non Residential Property
+* Residential Property
+* Personal
+* Statutory
+* White Collar
+* Others
+
+Details of which 39 crimes belong to which six classes can be seen by clicking on 'Class Labels' tab in 'Prediction Controls' window. 
+
+#### Controls
+
+This app allows users to input time and location in San Francisco and it outputs predicted probabilities using five different models - One Vs. All Logistic Regression, Multinomial Logit Model, Bagging, Random Forest and Gradient Boosting. 
+
+1. Prediction Panel - Allows user to input date/time and location. 
+
+			* Date/Time - mm/dd/yyy hh:mm:ss am/pm
+			* Day of Week - Will automatically be filled out.
+			* Address - Address in testing dataset (ending with ST, AV , /, etc).
+			* Latitude - Latitude of where crime took place.
+			* Longitude - Longitude of where crime took place.
+
+2. Animation - Allows user to visualize districts of SF. In addition, it shows the probability at different location of how particular class of crime is distributed. Larger dots = Higher probability. 
+
+			* Date/time format same as earlier. The output of this will be in 'Visualization' tab. 
+
+3. Individual Plot - Spits out probabilities and predicted class for five consecutive months.
+
+4. All Models Plot - Compares Individual plots from five different models implemented. 
+
+5. Predicted Probabilities - Gives the predicted probabilities and class for inputted date/time and location.
+
+#### Input Examples
+
+* Union Square
+
+  * Latitude : 37.787994
+  * Longitude : -122.407437
+  * Address  : 333 Post ST
+  * District : Central
+
+
+* Noe Valley Bakery
+
+	 * Latitude : 38.538264
+	 * Longitude: -121.484142
+	 * Address  : 4073 24th ST
+	 * District : Mission
+
+
+#### Contacts
+
+For any questions or comments email - sambed.adhikari@gmail.com

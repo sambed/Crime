@@ -1,0 +1,8 @@
+name: SanFranciscoCrime
+account: sambedx
+server: shinyapps.io
+bundleId: 457165
+url: https://sambedx.shinyapps.io/SanFranciscoCrime/
+when: 1463706091.69284
+asMultiple: FALSE
+asStatic: FALSE
